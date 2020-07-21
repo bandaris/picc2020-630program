@@ -1,0 +1,395 @@
+/deep/.el-col .el-input{
+  .el-input__inner{
+      height: @input_height;
+      line-height: @input_height;
+      font-size: 12px !important;
+  }
+}
+/deep/.el-date-editor.el-range-editor.el-range-editor .el-range-input::-webkit-input-placeholder{
+  font-size: 12px;
+}
+.color{
+  color:@txt_active_color !important;
+  cursor: pointer;
+  margin-right: 10px;
+}
+/deep/.picc-table.picc-table-normal th{
+  border-top: none;
+}
+/deep/.el-dialog__header{
+  padding: 1px 20px 0;
+  border-bottom: 2px solid @border_color;
+}
+/deep/.el-dialog__footer{
+  border-top: 2px solid @border_color;
+}
+/deep/.picc-table.picc-table-normal th .cell{
+  font-size: 12px;
+}
+/deep/.picc-table.picc-table-normal tr:last-child td{
+  background-color: @content_bgc;
+}
+/deep/.picc-table.picc-table-normal th{
+  background-color: @content_bgc;
+}
+/deep/.el-table__row{
+  cursor: pointer;
+  .cell{
+    font-size: 10px;
+  }
+}
+/deep/.picc-table.picc-table-normal td,
+/deep/.picc-table.picc-table-normal th {
+  padding: 0;
+  height: 44px;
+  border-bottom: 1px dashed rgba(41, 43, 52, 0.2);
+  background-color: @content_bgc;
+}
+/* 滚动条样式重置*/
+/deep/::-webkit-scrollbar,/deep/.scrollbar{
+  width: 4px;
+}
+/deep/::-webkit-scrollbar-thumb {
+  width: 4px;
+  height: 40px;
+  background-color: rgba(205, 205, 205, 0.4);
+  border-radius: 2px;
+}
+/deep/::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(205, 205, 205, 1);
+}
+/*弹框头部*/
+/deep/.el-dialog.picc-dialog-table .el-dialog__header .el-dialog__title {
+  font-size: @dlg_title_size;
+}
+/deep/.el-dialog__header .dialog-title .dialog-vac .title-nav ul {
+  margin: 0;
+}
+/*查询连接样式*/
+.search{
+  border-color: transparent;
+  color: @txt_active_color;
+  background-color: #fff;
+  &:hover{
+    background-color: #fff;
+  }
+}
+/* 弹框头部标题 */
+/deep/.el-dialog__header .dialog-title .dialog-vac {
+  line-height: 27px;
+  overflow: hidden;
+  .title-text {
+    float: left;
+    font-size: @dlg_title_size;
+  }
+  .title-nav {
+    float: right;
+    ul {
+      float: left;
+      margin-right: 30px;
+      li {
+        float: left;
+        margin: 0 10px;
+        cursor: pointer;
+        color: @txt_active_color;
+      }
+    }
+    img {
+      float: left;
+      margin-top: 4px;
+      cursor: pointer;
+    }
+  }
+}
+/deep/ .el-dialog__wrapper {
+  .el-dialog.picc-dialog-table .el-dialog__header {
+    border-width: 2px;
+  }
+  .has-gutter tr th {
+    background-color: #F1F1F1;
+    border-bottom: 0;
+  }
+}
+/deep/.el-dialog__header .dialog-title .dialog-form {
+  margin-top: 20px;
+  .el-row {
+    &:last-of-type {
+      margin-top: 19px;
+    }
+  }
+}
+/deep/.el-table::before {
+  height: 0;
+}
+/deep/.el-row {
+  line-height: @row_line_height;
+  margin: @row_height 0;
+  .txt {
+    text-align: right;
+    padding-right: 10px;
+    line-height: @row_line_height;
+    font-size: 12px;
+  }
+  .ct {
+    text-align: center;
+  }
+}
+/deep/.quan {
+  margin-top: 10px;
+}
+/deep/.el-dialog.picc-dialog-table .el-dialog__header {
+  padding-bottom: 16px;
+}
+/deep/.picc-table.picc-table-normal th {
+  border-top: 0;
+}
+/deep/.el-checkbox__inner {
+  width: 17px;
+  height: 17px;
+}
+/deep/.el-table td,
+.el-table th {
+  padding: 9.5px 0;
+}
+/deep/.picc-table.picc-table-normal tr:last-child td {
+  border-bottom: 1px dashed rgba(41, 43, 52, 0.2);
+  margin-bottom: 1px;
+}
+/deep/.el-dialog__footer {
+  border-top: 2px solid @border_color;
+  margin-top: 15px;
+  text-align: center;
+  padding: 15px;
+}
+//重置date-piker样式
+/deep/.el-date-editor.el-range-editor.el-range-editor .el-range__icon{
+  left: 7px;
+}
+/deep/.el-date-editor.el-range-editor.el-range-editor{
+  padding: 7px 0px 7px 20px;
+  font-size:12px !important;
+}
+/deep/.el-date-editor.el-range-editor.el-range-editor .el-range__close-icon{
+  display: inline-block;
+  width: 15px;
+}
+/deep/.el-date-editor.el-input.el-range-editor .el-range-input[placeholder="开始日期"], 
+/deep/.el-date-editor.el-range-editor.el-range-editor .el-range-input[placeholder="开始日期"]{
+  text-align:left;
+  color:#909199;
+  font-size:12px !important;
+  padding-left:10px;
+}
+/deep/.el-date-editor.el-input.el-range-editor .el-range-input[placeholder="结束日期"], 
+/deep/.el-date-editor.el-range-editor.el-range-editor .el-range-input[placeholder="结束日期"]{
+  text-align:left;
+  color:#909199;
+  font-size:12px !important;
+  padding-left:10px;
+}
+/deep/.el-date-editor .el-range__close-icon{
+  line-height: 19px;
+}
+/deep/.row{
+  width: auto !important;
+  height: auto !important;
+}
+//定义表格或者表单头部主体
+.title-style {
+    height: 31px;
+    overflow: hidden;
+    line-height: 30px;
+    b {
+      font-size: 16px;
+      float: left;
+    }
+    i {
+      font-style: normal;
+      float: right;
+      cursor: pointer;
+      color: @txt_active_color;
+      margin-right: 11px;
+    }
+    span {
+      float: left;
+      width: 7px;
+      height: 25px;
+      margin-top: 2px;
+      background-color: @style_color;
+      margin-right: 2px;
+    }
+  }
+  //统一样式
+  ul,h1,p{
+    margin: 0;
+    padding: 0;
+  }
+  .fr{
+    float: right;
+  }
+  .fl{
+    float: left;
+  }
+  .clear{
+    &::after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+  /deep/.el-input-number.is-controls-right .el-input__inner{
+    padding-left: 7px;
+  }
+  /deep/.el-input-number {
+    #placeholder~div{
+      font-size: 12px !important;
+    }
+    width: 100%;
+    /deep/.el-input-number__increase{
+      line-height: 16px !important;
+    }
+    /deep/.el-input-number__decrease{
+      background-color: transparent;
+    }
+    .el-input{
+      width: 100%;
+      input{
+        div{
+          font-size: 12px !important;
+        }
+      }
+    }
+    /deep/.el-input__inner::placeholder{
+      font-size: 12px;
+    }
+  }
+  /deep/.el-input-number:not(.is-disabled) .el-input__inner{
+    font-size: 12px !important;
+    text-align:left
+  }
+  /deep/.el-input-number .el-input-number__increase:after{
+    top: -1px;
+    height: 32px;
+  }
+  /deep/.el-input-number .el-input-number__decrease:after{
+    background: transparent;
+  }
+  //给盒子加边框
+  .box-border {
+    margin-top: 18px;
+    border: 1px solid @border_color;
+    border-radius: @border_radius;
+    overflow: hidden;
+  }
+  .container{
+    height: calc(~ "100vh - 131px") !important;
+    padding-top: 15px;
+    background-color: @content_bgc;
+    font-size: @font_size;
+    overflow: auto;
+    overflow-x: hidden;
+    position: relative;
+    &::before{
+      content:"";
+      display: table;
+      clear: both;
+    }
+  }
+//表单的盒子样式
+.form-grop{
+  margin: 10px @aside_w;
+}
+.forms{
+  width: 100%;
+  margin: 10px 0 10px 0;
+  border: 1px solid @border_color;
+  border-radius: @border_radius;
+  background-color: @content_bgc;
+  .row-last{
+    overflow: hidden;
+  }
+}
+.txtmi{
+  &::after{
+    content: '*';
+    color: @style_color;
+    display: inline-block;
+  }
+}
+//右侧link连接
+.tab-nav{
+  width: 100%;
+  // height: 100px;
+  .nav-link{
+    margin: 0px 20px 0 20px;
+    border-bottom: 2px solid @border_color;
+    overflow: hidden;
+    height: 40px;
+    li{
+      float: left; 
+      cursor: pointer;
+    }
+    .nav-left{
+      float: left;
+      padding-left: 10px;
+      li{
+        margin-right: 60px;
+        position: relative;
+        &::before{
+          content: '';
+          position: absolute;
+          width: 38px;
+          height: 4px;
+          background-color:transparent;
+          border-radius: 2px;
+          top: 30px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      .active{
+        font-weight: bold;
+        &::before{
+          background-color: @style_color;
+        }
+      }
+    }
+    .nav-right{
+      float: right;
+      margin-top: 10px;
+      li{
+        font-weight: bold;
+        color: @txt_active_color;
+        padding: 0 20px;
+        border-left: 1px solid @border_color;
+        font-size: @font_size;
+      }
+    }
+  }
+}
+.loaddingparentstyle{
+  position: relative;
+}
+//定义超级小按钮
+.supermini{
+  height: 21px !important;
+  min-width: 62px !important;
+}
+//重置alert弹框样式
+/deep/.picc-message-box.el-message-box--center .el-message-box__title{
+  justify-content: flex-start;
+}
+// 定义全局变量
+@font_size:14px;//文本的大小
+@aside_w:20px;//左右两边的宽度
+@top_h:15px;//上方内容部分距导航的距离
+@style_color:#e6390e;//主体样式颜色
+@txt_active_color:#1c61fc;//可以点击的文本颜色
+@border_color:#D1D1D1;//边框颜色
+@border_radius:6px;//边框倒角
+@input_height:34px;//input输入框的高度
+@dlg_title_size:20px;//弹框标题的文本大小
+@row_line_height:27px;//栅格布局中的行高
+@row_height:10px;//栅格布局中input表单上下的边距
+@content_bgc:#fff;//内容的背景颜色
+@font_color:#292b34;//字体的颜色
